@@ -2,6 +2,7 @@ set nocompatible " Turn off vi compatibility - don't need it
 
 " PLUGINS
 "" Pathogen
+filetype on        " Bypass strange arror in combonation with git
 filetype off              
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
