@@ -2,14 +2,19 @@ set nocompatible " Turn off vi compatibility - don't need it
 
 " PLUGINS
 "" Pathogen
-filetype on        " Bypass strange arror in combonation with git
+filetype on        " Bypass strange error in combination with git
 filetype off              
-call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
-filetype plugin indent on 
+call pathogen#helptags()
+
+" Syntax highlighting 'n stuff
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
 
 " EDITOR BEHAVIOR
-set autoread       " Automativally reload file if changed outside of vim
+set autoread       " Automatically reload file if changed outside of vim
 set number         " Line numbers
 set autoindent     " Autoindenting always on
 set copyindent     " Copy previous indentation
@@ -19,9 +24,9 @@ set hlsearch       " Highlight search terms
 set incsearch      " Show search matches as you type 
 set gdefault       " Search/replace globally (on a line) by default
 
-"" Better regex behavior
-nnoremap / /\v
-vnoremap / /\v
+"" Better regex behavior - not for me...
+" nnoremap / /\v
+" vnoremap / /\v
 
 " Tabs
 set smarttab
@@ -50,30 +55,28 @@ set guioptions-=T  " Disable the toolbar (GUI only)
 set mouse=a        " Enable mouse (if terminal supports it)
 set showcmd        " Show partial command in the last line
 set showmode       " Show mode in the last line
-set wildmenu       " Comand-line completion
+set wildmenu       " Command-line completion
 set title          " Change the terminal's title
 set showmatch      " Set show matching parenthesis
 set nomodeline     " Disable mode lines
 
-"" Inivisble chars
+"" Invisible chars
 set listchars=tab:▸\ ,eol:¬
 set nolist         " Don't show invisible chars by default
 
+" Colors
 colorscheme sunburst " Use sunburst theme (extracted from TextMate)
-
-" Syntax highlighting 'n stuff
-syntax on
-filetype on
-filetype indent on
-filetype plugin on
+hi SpellBad term=reverse ctermfg=White ctermbg=Red gui=undercurl guisp=Red
 
 " Status line
+let g:rails_statusline=0                     " Disable vim-rails info
+
 set laststatus=2
 set statusline=
 set statusline+=%-3.3n |                     " buffer number
 set statusline+=%f |                         " filename
-set statusline+=%h%m%r%w                     " status flags
-set statusline+=%=                           " right align remainder
+set statusline+=%h%m%r%w |                   " status flags
+set statusline+=%*%=                         " right align remainder
 set statusline+=0x%-8B                       " character value
 set statusline+=%-14(%l,%c%V%)               " line, character
 set statusline+=%<%P
@@ -89,7 +92,7 @@ nnoremap <down> gj
 nnoremap k gk
 nnoremap <up> gk
 
-"" Delete lines with dd without addnig them to the yank stack
+"" Delete lines with dd without adding them to the yank stack
 nnoremap d "_d
 vnoremap d "_d
 nnoremap D "_D
@@ -106,9 +109,9 @@ nmap Y y$
 nnoremap <leader>v V`]
 
 "" Yank/paste to the OS clipboard with ,y and ,p
-nmap <leader>y "+y
-nmap <leader>Y "+yy
-nmap <leader>p "+p
+nmap <leader>y "+yy
+nmap <leader>Y "+Y
+nmap <leader>p "+pp
 nmap <leader>P "+P
 
 "" Make p in Visual mode replace the selected text with the yank register
@@ -122,4 +125,7 @@ map <Leader>n :NERDTreeToggle<cr>
 
 "" Autocomplete list
 inoremap <Leader><tab> <c-n>
+inoremap <c-space> <c-x><c-o>
+inoremap <nul> <c-x><c-o>
+set completeopt=menu,preview,longest
 
