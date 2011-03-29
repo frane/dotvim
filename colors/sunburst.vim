@@ -22,7 +22,7 @@ if MySys() == "Darwin"
 	set gfn=Monaco:h12
 	set shell=/bin/bash
 elseif MySys() == "Windows"
-	set gfn=Consolas:h10
+	set gfn=Consolas:h11
 elseif MySys() == "Linux"
 	set gfn=Monospace\ 11
 	set shell=/bin/bash
