@@ -111,7 +111,7 @@ nnoremap <leader>v V`]
 "" Yank/paste to the OS clipboard with ,y and ,p
 nmap <leader>y "+yy
 nmap <leader>Y "+Y
-nmap <leader>p "+pp
+nmap <leader>p "+gP
 nmap <leader>P "+P
 
 "" Make p in Visual mode replace the selected text with the yank register
