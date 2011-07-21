@@ -65,6 +65,8 @@ set listchars=tab:▸\ ,eol:¬
 set nolist         " Don't show invisible chars by default
 
 " Colors
+set t_Co=256
+let g:sunburst_termcolors=256
 colorscheme sunburst " Use sunburst theme (extracted from TextMate)
 hi SpellBad term=reverse ctermfg=White ctermbg=Red gui=undercurl guisp=Red
 
