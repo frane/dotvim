@@ -24,10 +24,6 @@ set hlsearch       " Highlight search terms
 set incsearch      " Show search matches as you type 
 set gdefault       " Search/replace globally (on a line) by default
 
-"" Better regex behavior - not for me...
-" nnoremap / /\v
-" vnoremap / /\v
-
 " Tabs
 set smarttab
 set tabstop=4
@@ -59,6 +55,8 @@ set wildmenu       " Command-line completion
 set title          " Change the terminal's title
 set showmatch      " Set show matching parenthesis
 set nomodeline     " Disable mode lines
+set colorcolumn=80
+
 
 "" Invisible chars
 set listchars=tab:▸\ ,eol:¬
@@ -104,17 +102,20 @@ vnoremap c "_c
 nnoremap C "_C
 vnoremap C "_C
 
+"" Autmoatically escape insert mode when changing tabs (GVim/MacVim)
+autocmd TabEnter * stopinsert
+
 "" Quick yanking to the end of the line
 nmap Y y$
+
+"" Quick cut to the end of line
+nnoremap <leader>x y$d$
 
 "" Reselect text that was just pasted with ,v
 nnoremap <leader>v V`]
 
-"" Yank/paste to the OS clipboard with ,y and ,p
-nmap <leader>y "+yy
-nmap <leader>Y "+Y
-nmap <leader>p "+gP
-nmap <leader>P "+P
+"" Yank/paste to the OS clipboard
+set clipboard+=unnamed
 
 "" Make p in Visual mode replace the selected text with the yank register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>

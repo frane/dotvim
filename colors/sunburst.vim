@@ -68,6 +68,8 @@ hi CursorLine   guifg=NONE    guibg=#121212
 hi CursorLine   ctermfg=none  ctermbg=233
 hi CursorColumn guifg=NONE    guibg=#121212
 hi CursorColumn ctermfg=none  ctermbg=233
+hi ColorColumn guifg=NONE    guibg=#121212
+hi ColorColumn ctermfg=none  ctermbg=233
 hi Pmenu        guifg=#ffffff guibg=#121212
 hi Pmenu        ctermfg=15    ctermbg=233
 hi PmenuSel     guifg=#ffffff guibg=#242424
