@@ -28,7 +28,6 @@ set gdefault       " Search/replace globally (on a line) by default
 set smarttab
 set tabstop=4
 set shiftwidth=4
-set smarttab      
 
 "" Encoding
 set termencoding=utf-8
@@ -106,7 +105,7 @@ vnoremap C "_C
 autocmd TabEnter * stopinsert
 
 "" Quick yanking to the end of the line
-nmap Y y$
+nmap <leader>y y$
 
 "" Quick cut to the end of line
 nnoremap <leader>x y$d$
