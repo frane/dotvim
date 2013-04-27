@@ -53,7 +53,6 @@ set showmode       " Show mode in the last line
 set wildmenu       " Command-line completion
 set title          " Change the terminal's title
 set showmatch      " Set show matching parenthesis
-set nomodeline     " Disable mode lines
 set colorcolumn=80
 
 
