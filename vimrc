@@ -130,3 +130,5 @@ inoremap <c-space> <c-x><c-o>
 inoremap <nul> <c-x><c-o>
 set completeopt=menu,preview,longest
 
+"" Force-detect .md estension as markdown instead of Modula2
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
