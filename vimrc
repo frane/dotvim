@@ -34,7 +34,7 @@ set termencoding=utf-8
 set encoding=utf-8
 
 "" Make sure bash is the default shell
-set shell=/bin/bash
+set shell=/bin/zsh
 
 "" Put all swap file in one place
 set directory^=$HOME/.tmp/
