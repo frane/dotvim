@@ -34,7 +34,7 @@ set termencoding=utf-8
 set encoding=utf-8
 
 "" Make sure bash is the default shell
-set shell=/bin/zsh
+set shell=/usr/local/bin/bash
 
 "" Put all swap file in one place
 set directory^=$HOME/.tmp/
@@ -74,6 +74,7 @@ set statusline=
 set statusline+=%-3.3n |                     " buffer number
 set statusline+=%f |                         " filename
 set statusline+=%h%m%r%w |                   " status flags
+set statusline+=\ %{fugitive#statusline()} | " branch status
 set statusline+=%*%=                         " right align remainder
 set statusline+=0x%-8B                       " character value
 set statusline+=%-14(%l,%c%V%)               " line, character
@@ -102,6 +103,9 @@ vnoremap C "_C
 
 "" Autmoatically escape insert mode when changing tabs (GVim/MacVim)
 autocmd TabEnter * stopinsert
+
+"" Gundo
+nnoremap <Leader>u :GundoToggle<CR>
 
 "" Quick yanking to the end of the line
 nmap <leader>y y$
