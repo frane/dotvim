@@ -132,7 +132,10 @@ map <Leader>n :NERDTreeToggle<cr>
 inoremap <Leader><tab> <c-n>
 inoremap <c-space> <c-x><c-o>
 inoremap <nul> <c-x><c-o>
-set completeopt=menu,preview,longest
+set completeopt=menu,longest
+
+"" YouCompleteMe
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
 
 "" Force-detect .md estension as markdown instead of Modula2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
