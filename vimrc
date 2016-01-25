@@ -135,7 +135,7 @@ inoremap <nul> <c-x><c-o>
 set completeopt=menu,longest
 
 "" YouCompleteMe
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
 
 "" Force-detect .md estension as markdown instead of Modula2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
