@@ -43,3 +43,6 @@
 [submodule "bundle/simplenote"]
 	path = bundle/simplenote
 	url = https://github.com/mrtazz/simplenote.vim.git
+[submodule "bundle/goyo.vim"]
+	path = bundle/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
