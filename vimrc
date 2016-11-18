@@ -23,6 +23,7 @@ set smartcase      " Ignore case if search pattern is all lowercase,
 set hlsearch       " Highlight search terms 
 set incsearch      " Show search matches as you type 
 set gdefault       " Search/replace globally (on a line) by default
+set hidden
 
 " Tabs
 set smarttab
@@ -136,6 +137,14 @@ set completeopt=menu,longest
 
 "" YouCompleteMe
 let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+
+"" Buffers
+nnoremap <Leader>b :buffers<CR>:buffer<Space>
+nnoremap <Leader>bt :buffers<CR>:tab buffer<Space>
+
+"" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 "" Force-detect .md estension as markdown instead of Modula2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
