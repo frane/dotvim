@@ -130,13 +130,10 @@ cmap w!! w !sudo tee % >/dev/null
 map <Leader>n :NERDTreeToggle<cr>
 
 "" Autocomplete list
-inoremap <Leader><tab> <c-n>
 inoremap <c-space> <c-x><c-o>
 inoremap <nul> <c-x><c-o>
 set completeopt=menu,longest
 
-"" YouCompleteMe
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
 
 "" Buffers
 nnoremap <Leader>b :buffers<CR>:buffer<Space>
