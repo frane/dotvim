@@ -1,12 +1,5 @@
 set nocompatible " Turn off vi compatibility - don't need it
 
-" PLUGINS
-"" Pathogen
-filetype on        " Bypass strange error in combination with git
-filetype off              
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 " Syntax highlighting 'n stuff
 syntax on
 filetype on

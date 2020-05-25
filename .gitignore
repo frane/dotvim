@@ -1,1 +1,3 @@
 .netrwhist
+# since it's a symlink to vimrc
+init.vim

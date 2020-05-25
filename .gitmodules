@@ -1,54 +1,54 @@
 [submodule "bundle/nerdtree"]
-	path = pack/default/nerdtree
+	path = pack/default/start/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
 [submodule "bundle/nerdcommenter"]
-	path = pack/default/nerdcommenter
+	path = pack/default/start/nerdcommenter
 	url = http://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/vim-rails"]
-	path = pack/default/vim-rails
+	path = pack/default/start/vim-rails
 	url = https://github.com/tpope/vim-rails.git
 [submodule "bundle/vim-fugitive"]
-	path = pack/default/vim-fugitive
+	path = pack/default/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/html5"]
-	path = pack/default/html5
+	path = pack/default/start/html5
 	url = https://github.com/othree/html5.vim.git
 [submodule "bundle/vim-coffee-script"]
-	path = pack/default/vim-coffee-script
+	path = pack/default/start/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/vim-scala"]
-	path = pack/default/vim-scala
+	path = pack/default/start/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
 [submodule "bundle/vim-less"]
-	path = pack/default/vim-less
+	path = pack/default/start/vim-less
 	url = https://github.com/groenewege/vim-less.git
 [submodule "bundle/vim-go"]
-	path = pack/default/vim-go
+	path = pack/default/start/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/vim-gitgutter"]
-	path = pack/default/vim-gitgutter
+	path = pack/default/start/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/ctrlp.vim"]
-	path = pack/default/ctrlp.vim
+	path = pack/default/start/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule "bundle/gundo.vim"]
-	path = pack/default/gundo.vim
+	path = pack/default/start/gundo.vim
 	url = git://github.com/sjl/gundo.vim.git
 [submodule "bundle/goyo.vim"]
-	path = pack/default/goyo.vim
+	path = pack/default/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
 [submodule "bundle/dash.vim"]
-	path = pack/default/dash.vim
+	path = pack/default/start/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
 [submodule "bundle/vim-css3-syntax"]
-	path = pack/default/vim-css3-syntax
+	path = pack/default/start/vim-css3-syntax
 	url = https://github.com/hail2u/vim-css3-syntax.git
 [submodule "bundle/vim-vue"]
-	path = pack/default/vim-vue
+	path = pack/default/start/vim-vue
 	url = https://github.com/posva/vim-vue.git
 [submodule "bundle/vim-javascript"]
-	path = pack/default/vim-javascript
+	path = pack/default/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/vim-jsx"]
-	path = pack/default/vim-jsx
+	path = pack/default/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx
