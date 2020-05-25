@@ -52,3 +52,6 @@
 [submodule "bundle/vim-jsx"]
 	path = pack/default/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx
+[submodule "pack/default/start/coc.nvim"]
+	path = pack/default/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim

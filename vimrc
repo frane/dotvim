@@ -122,10 +122,9 @@ cmap w!! w !sudo tee % >/dev/null
 "" NERDTree
 map <Leader>n :NERDTreeToggle<cr>
 
-"" Autocomplete list
-inoremap <c-space> <c-x><c-o>
-inoremap <nul> <c-x><c-o>
-set completeopt=menu,longest
+"" Don't use vim completion
+set completefunc=
+set omnifunc=
 
 
 "" Buffers
